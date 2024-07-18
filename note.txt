@@ -1,13 +1,25 @@
- Đẩy code từ local lên remote
+    Đẩy code từ local lên remote
 
  git add -A 
  git commit -m " create home page html "
- git push -u origin master
+ git push -u origin [tên nhánh hiện tại]
 
- Đẩy lần 2
+    Đẩy lần 2
  git add -A 
- git commit -m " create home page html "
+ git commit -m " mục đích"
  git push
 
- Tạo nhánh
- git checkout -b login
+    Tạo nhánh
+ git checkout -b [tên nhánh]
+
+   Chuyển nhánh
+ git checkout [tên nhánh]
+
+  Xem các nhánh đang có trong máy
+git branch
+  Gom code từ 2 login về master ( đứng tại nhánh master)
+
+git merge login 
+
+  Xung đột code : khi 2 nhánh xảy ra khi merge và pull
+trường hợp sẽ option phù hợp nhất ( incomming, current, keep both)
